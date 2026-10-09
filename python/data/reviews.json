@@ -1,0 +1,25 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Maria",
+      "rating": 5,
+      "text": "Absolutely amazing! Beautiful sea view, fresh coffee, and friendly staff. Highly recommended!",
+      "date": "2024-12-20T18:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Dimitris",
+      "rating": 5,
+      "text": "Εξαιρετικό φαγητό και υπέροχη ατμόσφαιρα. Συνιστώ ανεπιφύλακτα!",
+      "date": "2024-12-18T19:15:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Anna K.",
+      "rating": 4,
+      "text": "Great food, lovely terrace. The grilled octopus was amazing!",
+      "date": "2024-12-15T20:00:00.000Z"
+    }
+  ]
+}

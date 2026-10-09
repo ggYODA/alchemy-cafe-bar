@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alchemy Cafe Bar — Seaside Cafe Bar in Nea Makri, Greece. Coffee, food, drinks, and cocktails with a beautiful sea view.">
+    <meta name="keywords" content="cafe, bar, Nea Makri, Greece, restaurant, seaside, coffee, cocktails">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://alchemy-cafebar.gr">
+    <meta property="og:title" content="Alchemy Cafe Bar — Nea Makri, Greece">
+    <meta property="og:description" content="Seaside Cafe Bar with fresh coffee, Mediterranean cuisine, and beautiful sea views.">
+    <meta property="og:image" content="https://alchemy-cafebar.gr/images/hero.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <title>Alchemy Cafe Bar — Nea Makri</title>
+</head>
+<body>
+    <!-- ============================================
+         NAVIGATION & LANGUAGE SELECTOR
+         ============================================ -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <h1>Alchemy</h1>
+                    <p class="tagline" data-i18n="tagline">Seaside Cafe Bar</p>
+                </div>
+                
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#about" data-i18n="nav_about">About</a></li>
+                        <li><a href="#menu" data-i18n="nav_menu">Menu</a></li>
+                        <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                        <li><a href="#reviews" data-i18n="nav_reviews">Reviews</a></li>
+                    </ul>
+                    
+                    <div class="nav-social">
+                        <a href="https://www.instagram.com/alchemy_cafebar/" target="_blank" class="social-icon" title="Follow on Instagram">📷</a>
+                        <a href="https://www.facebook.com/alchemy_cafebar/" target="_blank" class="social-icon" title="Follow on Facebook">👍</a>
+                        <a href="tel:+306912345678" class="social-icon" title="Call for Delivery">🚗</a>
+                    </div>
+                    
+                    <div class="language-selector">
+                        <button class="language-toggle" id="langBtn">🌐</button>
+                        <div class="language-menu" id="langMenu">
+                            <button class="lang-option" data-lang="el">🇬🇷 Ελληνικά</button>
+                            <button class="lang-option" data-lang="en">🇬🇧 English</button>
+                            <button class="lang-option" data-lang="uk">🇺🇦 Українська</button>
+                            <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+                            <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+                            <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+                            <button class="lang-option" data-lang="es">🇪🇸 Español</button>
+                            <button class="lang-option" data-lang="ro">🇷🇴 Română</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         HERO SECTION — SLIDESHOW
+         ============================================ -->
+    <section class="hero" id="hero">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="../images/hero-1.jpg" alt="Alchemy Cafe Bar with sea view">
+            </div>
+            <div class="slide fade">
+                <img src="../images/hero-2.jpg" alt="Coffee at Alchemy">
+            </div>
+            <div class="slide fade">
+                <img src="../images/hero-3.jpg" alt="Sea view from Alchemy">
+            </div>
+            <div class="slide fade">
+                <img src="../images/hero-4.jpg" alt="Drinks at Alchemy">
+            </div>
+            <div class="slide fade">
+                <img src="../images/hero-5.jpg" alt="Terrace of Alchemy">
+            </div>
+        </div>
+
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Alchemy</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Seaside Cafe Bar in Nea Makri</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="callBtn" data-i18n="btn_call">📞 Call Now</button>
+                    <button class="btn btn-secondary" id="directionsBtn" data-i18n="btn_directions">🗺️ Get Directions</button>
+                    <button class="btn btn-primary" id="menuBtn" data-i18n="btn_menu">📋 View Menu</button>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="https://www.instagram.com/alchemy_cafebar/" target="_blank" class="social-link" title="Instagram">📷</a>
+                    <a href="https://www.facebook.com/alchemycafebar/" target="_blank" class="social-link" title="Facebook">👍</a>
+                    <a href="https://www.e-food.gr/delivery/nea-makri/alchemy" target="_blank" class="social-link" title="e-Food Delivery">🛵</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about_title">About Alchemy Cafe Bar</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="about_text1">
+                        Welcome to Alchemy Cafe Bar — a seaside café located on the beautiful shores of Nea Makri, Greece.
+                    </p>
+                    <p data-i18n="about_text2">
+                        Whether you're looking for a morning coffee, a hearty lunch, evening drinks, or cocktails with a view of the Aegean Sea, Alchemy is your perfect destination.
+                    </p>
+                    <p data-i18n="about_text3">
+                        Open from 09:00 to 00:00 every day, we welcome both locals and tourists seeking a relaxing atmosphere, fresh Mediterranean cuisine, and quality beverages.
+                    </p>
+                </div>
+
+                <div class="hours-box">
+                    <h3 data-i18n="hours_title">Hours</h3>
+                    <p class="hours-time">
+                        <span data-i18n="hours_days">Every day</span>: <strong>09:00 – 00:00</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="highlights">
+                <div class="highlight">
+                    <div class="icon">☕</div>
+                    <h3 data-i18n="highlight_coffee">Premium Coffee</h3>
+                </div>
+                <div class="highlight">
+                    <div class="icon">🍽️</div>
+                    <h3 data-i18n="highlight_food">Fresh Mediterranean Cuisine</h3>
+                </div>
+                <div class="highlight">
+                    <div class="icon">🍹</div>
+                    <h3 data-i18n="highlight_drinks">Cocktails & Drinks</h3>
+                </div>
+                <div class="highlight">
+                    <div class="icon">🌊</div>
+                    <h3 data-i18n="highlight_sea">Beautiful Sea View</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         MENU SECTION
+         ============================================ -->
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="menu_title">Menu</h2>
+            
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="breakfast" data-i18n="menu_breakfast">Breakfast</button>
+                <button class="menu-tab" data-category="coffee" data-i18n="menu_coffee">Coffee</button>
+                <button class="menu-tab" data-category="food" data-i18n="menu_food">Food</button>
+                <button class="menu-tab" data-category="desserts" data-i18n="menu_desserts">Desserts</button>
+                <button class="menu-tab" data-category="drinks" data-i18n="menu_drinks">Drinks</button>
+            </div>
+
+            <div class="menu-items" id="menuItems">
+                <!-- Menu items will be loaded here by JavaScript -->
+            </div>
+
+            <div class="menu-note" data-i18n="menu_note">
+                Full menu with prices available in Greek above. Translations follow. All information subject to change.
+            </div>
+
+            <button class="btn btn-primary" id="orderBtn" data-i18n="btn_order">🛵 Order with Delivery</button>
+        </div>
+    </section>
+
+    <!-- ============================================
+         GALLERY SECTION
+         ============================================ -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gallery_title">Gallery</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/gallery-1.jpg" alt="Gallery image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/gallery-2.jpg" alt="Gallery image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/gallery-3.jpg" alt="Gallery image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/gallery-4.jpg" alt="Gallery image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/gallery-5.jpg" alt="Gallery image 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         REVIEWS SECTION
+         ============================================ -->
+    <section id="reviews" class="section reviews-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="reviews_title">Reviews</h2>
+            
+            <div class="reviews-stats">
+                <div class="rating-box">
+                    <div class="rating-number" id="googleRating">4.3</div>
+                    <div class="rating-stars">⭐⭐⭐⭐</div>
+                    <p class="rating-source" data-i18n="reviews_google">Google Reviews</p>
+                    <p class="rating-count" id="googleCount">Based on <span id="googleReviewCount">200+</span> reviews</p>
+                </div>
+            </div>
+
+            <div class="reviews-list" id="reviewsList">
+                <!-- Reviews will be loaded here by JavaScript via API -->
+            </div>
+
+            <div class="reviews-actions">
+                <button class="btn btn-primary" id="leaveReviewBtn" data-i18n="btn_leave_review">✏️ Leave a Review</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact_title">Contact & Location</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 data-i18n="contact_address">Address</h3>
+                    <p>Leof. Posidonos 36<br>Nea Makri 190 05<br>Greece</p>
+                </div>
+
+                <div class="contact-info">
+                    <h3 data-i18n="contact_phone">Phone</h3>
+                    <p>
+                        <a href="tel:+302294093644" id="phoneLink">+30 2294 093644</a>
+                    </p>
+                </div>
+
+                <div class="contact-info">
+                    <h3 data-i18n="contact_social">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/alchemy_cafebar/" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/alchemycafebar/" target="_blank">Facebook</a>
+                        <a href="https://www.e-food.gr/delivery/nea-makri/alchemy" target="_blank">e-Food</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <h3 data-i18n="contact_map">Find Us on the Map</h3>
+                <iframe 
+                    width="100%" 
+                    height="400" 
+                    frameborder="0" 
+                    style="border:0; border-radius: 8px;" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.9421654054897!2d23.9819252!3d38.0916222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a18299914c727f%3A0x698ac04be2ce7e0d!2sAlchemy%20cafe%20bar!5e0!3m2!1sen!2sgr!4v1234567890" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Alchemy Cafe Bar. All rights reserved.</p>
+            <p data-i18n="footer_text">Nea Makri, Greece • Open 09:00–00:00 Daily</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/i18n.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
