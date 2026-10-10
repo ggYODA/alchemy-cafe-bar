@@ -36,18 +36,23 @@ const translations = {
         menu_food: 'Φαγητό',
         menu_desserts: 'Γλυκά',
         menu_drinks: 'Ποτά',
-        menu_note: 'Πλήρες μενού με τιμές διαθέσιμο στα ελληνικά παραπάνω. Μεταφράσεις ακολουθούν. Όλες οι πληροφορίες υπόκεινται σε αλλαγή.',
+        menu_note: 'Οι τιμές και η διαθεσιμότητα ενδέχεται να αλλάξουν.',
         
         gallery_title: 'Γαλερία',
         
         reviews_title: 'Κριτικές',
         reviews_google: 'Κριτικές Google',
+        reviews_based_on: 'Με βάση',
+        reviews_count_suffix: 'κριτικές Google',
+        reviews_empty: 'Δεν υπάρχουν ακόμη κριτικές.',
+        review_new_notification: 'Προστέθηκε νέα κριτική!',
         
         contact_title: 'Επαφή & Τοποθεσία',
         contact_address: 'Διεύθυνση',
         contact_phone: 'Τηλέφωνο',
         contact_social: 'Ακολουθήστε μας',
         contact_map: 'Βρείτε μας στο χάρτη',
+        footer_rights: 'Με επιφύλαξη παντός δικαιώματος.',
         
         /* Social Media & Info Boxes */
         social_instagram: 'Ακολουθήστε μας στο Instagram',
@@ -97,18 +102,23 @@ const translations = {
         menu_food: 'Food',
         menu_desserts: 'Desserts',
         menu_drinks: 'Drinks',
-        menu_note: 'Full menu with prices available in Greek above. Translations follow. All information subject to change.',
+        menu_note: 'Prices and availability may change.',
         
         gallery_title: 'Gallery',
         
         reviews_title: 'Reviews',
         reviews_google: 'Google Reviews',
+        reviews_based_on: 'Based on',
+        reviews_count_suffix: 'Google reviews',
+        reviews_empty: 'There are no reviews yet.',
+        review_new_notification: 'A new review was added!',
         
         contact_title: 'Contact & Location',
         contact_address: 'Address',
         contact_phone: 'Phone',
         contact_social: 'Follow Us',
         contact_map: 'Find Us on the Map',
+        footer_rights: 'All rights reserved.',
         
         /* Social Media & Info Boxes */
         social_instagram: 'Follow us on Instagram',
@@ -158,18 +168,23 @@ const translations = {
         menu_food: 'Їжа',
         menu_desserts: 'Десерти',
         menu_drinks: 'Напої',
-        menu_note: 'Повне меню з цінами доступне грецькою мовою вище. Далі йдуть переклади. Всі інформація може змінюватися.',
+        menu_note: 'Ціни та наявність можуть змінюватися.',
         
         gallery_title: 'Галерея',
         
         reviews_title: 'Відгуки',
         reviews_google: 'Відгуки Google',
+        reviews_based_on: 'На основі',
+        reviews_count_suffix: 'відгуків Google',
+        reviews_empty: 'Відгуків поки немає.',
+        review_new_notification: 'Додано новий відгук!',
         
         contact_title: 'Контакти та розташування',
         contact_address: 'Адреса',
         contact_phone: 'Телефон',
         contact_social: 'Стежте за нами',
         contact_map: 'Знайдіть нас на карті',
+        footer_rights: 'Усі права захищено.',
         
         /* Social Media & Info Boxes */
         social_instagram: 'Стежте за нами на Instagram',
@@ -219,18 +234,23 @@ const translations = {
         menu_food: 'Блюда',
         menu_desserts: 'Десерты',
         menu_drinks: 'Напитки',
-        menu_note: 'Полное меню с ценами доступно на греческом выше. Переводы следуют. Вся информация может изменяться.',
+        menu_note: 'Цены и наличие могут меняться.',
         
         gallery_title: 'Галерея',
         
         reviews_title: 'Отзывы',
         reviews_google: 'Отзывы Google',
+        reviews_based_on: 'На основе',
+        reviews_count_suffix: 'отзывов Google',
+        reviews_empty: 'Отзывов пока нет.',
+        review_new_notification: 'Добавлен новый отзыв!',
         
         contact_title: 'Контакты и местоположение',
         contact_address: 'Адрес',
         contact_phone: 'Телефон',
         contact_social: 'Следите за нами',
         contact_map: 'Найдите нас на карте',
+        footer_rights: 'Все права защищены.',
         
         /* Social Media & Info Boxes */
         social_instagram: 'Следите за нами на Instagram',
@@ -280,18 +300,23 @@ const translations = {
         menu_food: 'Speisen',
         menu_desserts: 'Desserts',
         menu_drinks: 'Getränke',
-        menu_note: 'Vollständiges Menü mit Preisen auf Griechisch oben. Übersetzungen folgen. Alle Angaben können sich ändern.',
+        menu_note: 'Preise und Verfügbarkeit können sich ändern.',
         
         gallery_title: 'Galerie',
         
         reviews_title: 'Bewertungen',
         reviews_google: 'Google-Bewertungen',
+        reviews_based_on: 'Basierend auf',
+        reviews_count_suffix: 'Google-Bewertungen',
+        reviews_empty: 'Noch keine Bewertungen.',
+        review_new_notification: 'Eine neue Bewertung wurde hinzugefügt!',
         
         contact_title: 'Kontakt & Standort',
         contact_address: 'Adresse',
         contact_phone: 'Telefon',
         contact_social: 'Folgen Sie uns',
         contact_map: 'Finden Sie uns auf der Karte',
+        footer_rights: 'Alle Rechte vorbehalten.',
         
         /* Social Media & Info Boxes */
         social_instagram: 'Folgen Sie uns auf Instagram',
@@ -341,18 +366,23 @@ const translations = {
         menu_food: 'Plats',
         menu_desserts: 'Desserts',
         menu_drinks: 'Boissons',
-        menu_note: 'Menu complet avec prix disponible en grec ci-dessus. Les traductions suivent. Toutes les informations peuvent être modifiées.',
+        menu_note: 'Les prix et la disponibilité peuvent changer.',
         
         gallery_title: 'Galerie',
         
         reviews_title: 'Avis',
         reviews_google: 'Avis Google',
+        reviews_based_on: 'Basé sur',
+        reviews_count_suffix: 'avis Google',
+        reviews_empty: 'Aucun avis pour le moment.',
+        review_new_notification: 'Un nouvel avis a été ajouté !',
         
         contact_title: 'Contact & Localisation',
         contact_address: 'Adresse',
         contact_phone: 'Téléphone',
         contact_social: 'Suivez-nous',
         contact_map: 'Trouvez-nous sur la carte',
+        footer_rights: 'Tous droits réservés.',
         
         /* Social Media & Info Boxes */
         social_instagram: 'Suivez-nous sur Instagram',
@@ -402,18 +432,23 @@ const translations = {
         menu_food: 'Platos',
         menu_desserts: 'Postres',
         menu_drinks: 'Bebidas',
-        menu_note: 'Menú completo con precios disponible en griego arriba. Las traducciones siguen. Toda la información está sujeta a cambios.',
+        menu_note: 'Los precios y la disponibilidad pueden cambiar.',
         
         gallery_title: 'Galería',
         
         reviews_title: 'Reseñas',
         reviews_google: 'Reseñas de Google',
+        reviews_based_on: 'Basado en',
+        reviews_count_suffix: 'reseñas de Google',
+        reviews_empty: 'Todavía no hay reseñas.',
+        review_new_notification: '¡Se añadió una reseña nueva!',
         
         contact_title: 'Contacto y Ubicación',
         contact_address: 'Dirección',
         contact_phone: 'Teléfono',
         contact_social: 'Síguenos',
         contact_map: 'Encuéntranos en el Mapa',
+        footer_rights: 'Todos los derechos reservados.',
         
         /* Social Media & Info Boxes */
         social_instagram: 'Síguenos en Instagram',
@@ -463,18 +498,23 @@ const translations = {
         menu_food: 'Mâncăruri',
         menu_desserts: 'Deserturi',
         menu_drinks: 'Băuturi',
-        menu_note: 'Meniu complet cu prețuri disponibil în limba greacă mai sus. Traducerile urmează. Toate informațiile pot fi modificate.',
+        menu_note: 'Prețurile și disponibilitatea se pot schimba.',
         
         gallery_title: 'Galerie',
         
         reviews_title: 'Recenzii',
         reviews_google: 'Recenzii Google',
+        reviews_based_on: 'Pe baza',
+        reviews_count_suffix: 'recenziilor Google',
+        reviews_empty: 'Nu există încă recenzii.',
+        review_new_notification: 'A fost adăugată o recenzie nouă!',
         
         contact_title: 'Contact și Locație',
         contact_address: 'Adresă',
         contact_phone: 'Telefon',
         contact_social: 'Urmăriți-ne',
         contact_map: 'Găsește-ne pe hartă',
+        footer_rights: 'Toate drepturile rezervate.',
         
         /* Social Media & Info Boxes */
         social_instagram: 'Urmăriți-ne pe Instagram',
@@ -558,6 +598,7 @@ function setLanguage(lang) {
             console.warn(`Translation key "${key}" not found for language "${lang}"`);
         }
     });
+    document.dispatchEvent(new CustomEvent('alchemy-language-change', { detail: { language: lang } }));
     
     // Update language button to show current language
     updateLanguageButton(lang);
@@ -577,6 +618,7 @@ function toggleLanguageMenu() {
     const langMenu = document.getElementById('langMenu');
     if (langMenu) {
         langMenu.classList.toggle('active');
+        document.getElementById('langBtn')?.setAttribute('aria-expanded', String(langMenu.classList.contains('active')));
     }
 }
 
@@ -587,6 +629,7 @@ function closeLanguageMenu() {
     const langMenu = document.getElementById('langMenu');
     if (langMenu) {
         langMenu.classList.remove('active');
+        document.getElementById('langBtn')?.setAttribute('aria-expanded', 'false');
     }
 }
 
@@ -596,16 +639,6 @@ function closeLanguageMenu() {
 function updateLanguageButton(lang) {
     const langBtn = document.getElementById('langBtn');
     if (langBtn) {
-        const langNames = {
-            el: '🇬🇷',
-            en: '🇬🇧',
-            uk: '🇺🇦',
-            ru: '🇷🇺',
-            de: '🇩🇪',
-            fr: '🇫🇷',
-            es: '🇪🇸',
-            ro: '🇷🇴'
-        };
-        langBtn.textContent = langNames[lang] || '🌐';
+        langBtn.setAttribute('aria-label', `${lang.toUpperCase()} — choose language`);
     }
 }

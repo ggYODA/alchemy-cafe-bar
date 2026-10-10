@@ -14,6 +14,7 @@ Alchemy Cafe Bar/
 │   └── style.css               # Styling (Mediterranean design)
 ├── js/
 │   ├── i18n.js                 # Internationalization (8 languages)
+│   ├── menu-data.js            # Full menu data and translations
 │   └── main.js                 # Interactivity & API integration
 ├── python/
 │   ├── server.py               # Flask API backend
@@ -72,7 +73,7 @@ The website supports **8 languages**:
 | `es` | Spanish | 🇪🇸 |
 | `ro` | Romanian | 🇷🇴 |
 
-Click the **🌐** button in the top-right corner to change language. Selection is saved in browser localStorage.
+Click the globe button in the top-right corner to change language. Selection is saved in browser localStorage. Menu names and descriptions and the included sample reviews are localized too; names of reviewers are never translated.
 
 ---
 
@@ -156,7 +157,7 @@ When a new review is added:
 
 ## 📊 Google Maps Data
 
-Store Google Maps rating and review count:
+This file stores the rating and review count shown on the site:
 
 ```json
 {
@@ -165,6 +166,8 @@ Store Google Maps rating and review count:
   "last_updated": "2024-12-20T12:00:00.000Z"
 }
 ```
+
+These values are maintained manually; the site does not currently fetch live Google Maps data. Check `last_updated` before treating the values as current.
 
 **Update via API**:
 ```bash
@@ -181,17 +184,18 @@ curl -X POST http://localhost:3000/api/google-data \
 ## 🎨 Design Features
 
 ### Mediterranean Theme
-- **Colors**: Deep sea blue, gold accents, white text
+- **Colors**: Warm cream, brown, and muted gold
 - **Typography**: Playfair Display (headers), Poppins (body)
-- **Hero Section**: Full-width slideshow with cafe photos (auto-rotate every 5 seconds)
+- **Hero Section**: Full-width slideshow (auto-rotates every 5 seconds when photos are present; uses a warm fallback without them)
+- **Social links**: Inline SVG icons beside the globe language selector
 - **Responsive**: Mobile-first design, works on all devices
 
 ### Key Sections
 1. **Hero** — Slideshow with call-to-action buttons
 2. **About** — Cafe description, hours, highlights
-3. **Menu** — Tabbed menu by category (Breakfast, Coffee, Food, Desserts, Drinks)
+3. **Menu** — 10 categorized tables containing 81 menu items, with available names and descriptions translated into all 8 supported languages
 4. **Gallery** — Grid of cafe photos
-5. **Reviews** — Google rating + site reviews
+5. **Reviews** — Google rating and count from `google-data.json` + localized sample review text (reviewer names remain unchanged)
 6. **Contact** — Address, phone, social links, embedded Google Map
 7. **Footer** — Copyright & quick info
 
@@ -246,9 +250,11 @@ netstat -ano | findstr :3000
 - Check console for JavaScript errors
 
 ### Images not displaying
-- Place cafe photos in `images/` folder
-- Name them: `hero-1.jpg`, `hero-2.jpg`, etc.
+- Place cafe photos in the project `images/` folder
+- Current supplied files: `seaside-terrace.png`, `afternoons-at-alchemy.png`, `seaside-interior.png`, `chef-in-action.png`, `espresso-preparation.png`, `alchemy-burger.png`, `friends-beer.png`, `terrace-promo.png`
+- Seven photos are used in the slideshow; all eight appear in the gallery. The burger photo is also used on the featured menu card.
 - Use high-quality images (minimum 1200px width)
+- Missing files are hidden instead of showing broken-image icons; the slideshow uses a warm fallback until the photos are added.
 
 ---
 

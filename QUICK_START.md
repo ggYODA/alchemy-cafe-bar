@@ -93,21 +93,20 @@ Invoke-WebRequest http://localhost:3000/api/health | ConvertFrom-Json
 
 ---
 
-## 📸 Add Your Photos
+## 📸 Cafe Photos
 
-1. Place cafe photos in: `C:\Users\game\Documents\vse_kod\projects\Alchemy Cafe Bar\images\`
+The supplied photos are already in `images/` and connected to the slideshow and gallery:
 
-2. Name them:
-   - `hero-1.jpg` — Main cafe/sea view
-   - `hero-2.jpg` — Coffee/breakfast
-   - `hero-3.jpg` — Sea view/terrace
-   - `hero-4.jpg` — Drinks/cocktails
-   - `hero-5.jpg` — Terrace atmosphere
-   - `gallery-1.jpg` to `gallery-5.jpg` — More photos
+- `seaside-terrace.png`
+- `afternoons-at-alchemy.png`
+- `seaside-interior.png`
+- `chef-in-action.png`
+- `espresso-preparation.png`
+- `alchemy-burger.png`
+- `friends-beer.png`
+- `terrace-promo.png`
 
-3. Refresh browser (Ctrl+R) and photos appear automatically!
-
-**Note**: Use JPG or PNG, at least 1200px wide for best quality.
+To add a new slideshow photo, place it in `images/` and add its path and alt text to `html/index.html`. Gallery photos are configured in `js/main.js`.
 
 ---
 
@@ -150,7 +149,7 @@ netstat -ano | findstr :3000
 
 ### Images not displaying
 - Check files are in `Alchemy Cafe Bar\images\` folder
-- Check filenames match: `hero-1.jpg`, `hero-2.jpg`, etc.
+- Check that the filenames referenced in `html/index.html` and `js/main.js` exactly match the files
 - Refresh browser (Ctrl+Shift+R for hard refresh)
 
 ### Language dropdown not working
@@ -163,14 +162,7 @@ netstat -ano | findstr :3000
 ## 📝 Common Tasks
 
 ### Update Menu
-Edit: `js/main.js` (line ~20)
-```javascript
-coffee: [
-    { name: 'Ελληνικός καφές', price: '€2,50', desc: 'With sugar' },
-    // Add more here
-]
-```
-Refresh browser to see changes.
+Edit `js/menu-data.js`. Each category and item has translated values for the supported languages; preserve the `id`, `name`, `description`, and `price` fields when editing. Refresh the browser to see changes.
 
 ### Update Hours
 Edit: `html/index.html` (search for "09:00")
@@ -178,15 +170,10 @@ Or edit in `js/i18n.js` (search for "hours_days")
 Refresh browser.
 
 ### Change Colors
-Edit: `css/style.css` (lines ~15-25)
-```css
---primary-blue: #1a3a52;    /* Change this */
---accent-gold: #d4af37;     /* Or this */
-```
-Refresh browser.
+Edit the color variables near the top of `css/style.css`, then refresh the browser.
 
-### Add Google Maps Rating
-Make API call:
+### Update the Displayed Google Rating
+The site currently reads manually maintained values from `python/data/google-data.json`; it does not fetch live Google Maps data. To update the values through the local API:
 ```powershell
 $body = @{
     rating = 4.5
@@ -205,8 +192,8 @@ Invoke-WebRequest -Uri http://localhost:3000/api/google-data `
 
 ### Before Deployment
 
-- [ ] **Photos**: Add 5-10 cafe photos to `images/` folder
-- [ ] **Menu**: Verify menu accuracy in `js/main.js`
+- [ ] **Photos**: Verify the cafe photos in `images/`
+- [ ] **Menu**: Verify all 81 menu entries in `js/menu-data.js`
 - [ ] **Contact**: Confirm address, phone, hours
 - [ ] **Google Data**: Update rating/review count
 - [ ] **Social Links**: Verify Instagram, Facebook, iFOOD URLs

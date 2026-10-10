@@ -49,53 +49,20 @@ Two servers are currently running on your local machine:
 
 ---
 
-## ⚠️ Issues Still Needed
+## ✅ Current Website Status
 
-### 1. **Slideshow Images**
-- The website looks for: `../images/hero-1.jpg` through `hero-5.jpg`
-- Currently: Folder is empty, so slideshow background shows as solid color
-- **Solution**: Add real cafe photos to the `images/` folder OR use the placeholder photos you provided
+- The hero slideshow uses seven supplied photos; the gallery uses eight.
+- The full menu contains 81 entries across 10 categories. Menu names and any supplied descriptions are translated into all 8 supported languages.
+- The language selector uses a globe icon and offers Greek, English, Ukrainian, Russian, German, French, Spanish, and Romanian.
+- The footer year updates automatically.
+- The review button opens the venue's Google Maps review page. The three sample reviews displayed on the site have localized text; reviewer names remain unchanged.
+- The rating and review count are read from `python/data/google-data.json`. They are not fetched live from Google Maps and must be updated manually.
 
-### 2. **Translation Keys**
-- Some UI labels still missing translations
-- Missing keys: social media labels, some button text
-- **Status**: Needs i18n.js update with missing keys
+## 🧪 Local Checks
 
-### 3. **Menu Section**
-- Currently: Basic menu list
-- Needed: Armellada-style redesign with:
-  - Category columns
-  - Info boxes (Hours, Delivery, Payment, Terrace, WiFi, Parking)
-  - Better typography
-  - Visual hierarchy
+Open `http://localhost:8000/html/index.html` for the website. The Flask API runs at `http://localhost:3000`; check `/api/reviews` and `/api/google-data` if the backend is running.
 
-### 4. **Page Colors**
-- Some sections still have old color references
-- Need to systematically update all remaining old color uses
-
----
-
-## 🚀 Next Steps
-
-1. **Add Your Cafe Photos**
-   - Place images in: `C:\Users\game\Documents\vse_kod\projects\Alchemy Cafe Bar\images\`
-   - Filename format: `hero-1.jpg`, `hero-2.jpg`, ... `hero-5.jpg`
-   - Size: Ideally 1200x600px for best quality
-   - Refresh browser after adding images
-
-2. **Test Language Switching**
-   - Click 🌐 button in navbar
-   - Select different languages
-   - Check if all text translates (report any missing translations)
-
-3. **Check Responsive Design**
-   - Open website in browser
-   - Resize window to test mobile view
-   - Should stack vertically on small screens
-
-4. **Add Real Data**
-   - Update `python/data/reviews.json` with real customer reviews
-   - Update Google Maps rating via API or manually in JSON
+The current photo files are in `images/`. Slideshow image paths are listed in `html/index.html`; gallery images are configured in `js/main.js`. The full translated menu is in `js/menu-data.js`.
 
 ---
 
@@ -144,4 +111,4 @@ Then open: **http://localhost:8000/html/index.html**
 
 ---
 
-Made with ❤️ by Copilot | Last updated: 2024
+Local development notes for Alchemy Cafe Bar.
